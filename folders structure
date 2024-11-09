@@ -1,0 +1,31 @@
+project-root/
+│
+├── client/                  # Frontend (React) application
+│   ├── public/              # Public folder for HTML, images, and static assets
+│   │   └── index.html       # Main HTML file
+│   ├── src/                 # Source files for React
+│   │   ├── components/      # Reusable React components (e.g., game board, cells)
+│   │   │   ├── GameBoard.js
+│   │   │   └── Cell.js
+│   │   ├── pages/           # React pages (e.g., lobby, game screen)
+│   │   │   ├── Lobby.js
+│   │   │   └── Game.js
+│   │   ├── utils/           # Helper functions (e.g., utility for handling moves)
+│   │   ├── App.js           # Main app component
+│   │   └── index.js         # Entry point for React app
+│   └── package.json         # Frontend dependencies
+│
+├── server/                  # Backend (Node.js and Socket.IO) application
+│   ├── controllers/         # Logic for handling game events and data (optional)
+│   ├── models/              # Game models, schemas, and data (optional, if needed)
+│   ├── utils/               # Utility functions (e.g., game state management)
+│   ├── index.js             # Entry point for backend server (e.g., Express, Socket.IO setup)
+│   └── package.json         # Backend dependencies
+│
+├── shared/                  # Shared files between frontend and backend (optional)
+│   └── constants.js         # Shared constants (e.g., grid size, game settings)
+│
+├── .eslintrc.js             # ESLint configuration
+├── .prettierrc              # Prettier configuration
+├── .gitignore               # Files and folders to ignore in Git
+└── README.md                # Project documentation
