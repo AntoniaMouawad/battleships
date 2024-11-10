@@ -1,4 +1,7 @@
 const Lobby = () => {
-    return <div>Lobby</div>
+    return <div>
+        <button>New Game</button>
+        <button>Join Game</button>
+    </div>
 }
 export default Lobby

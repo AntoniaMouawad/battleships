@@ -1,13 +1,14 @@
 
 import Lobby from "./pages/Lobby";
 import Game from "./pages/Game";
+import { useState } from "react";
 
 const App = () => {
+  const {gameId, setGameId} = useState(null);
   return (
-  <div>
-    <Lobby/>
-    <Game/>
-  </div>
+    gameId == null ? 
+    <Lobby setGameId={setGameId}/> :
+    <Game gameId={gameId}/>
   );
 }
 
