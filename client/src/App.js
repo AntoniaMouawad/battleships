@@ -1,14 +1,13 @@
 
-import Lobby from "./pages/Lobby";
-import Game from "./pages/Game";
-import { useState } from "react";
+import Header from "./components/Header";
+import Cell from "./components/Cell";
 
 const App = () => {
-  const {gameId, setGameId} = useState(null);
   return (
-    gameId == null ? 
-    <Lobby setGameId={setGameId}/> :
-    <Game gameId={gameId}/>
+    <div className="App">
+      <Header/>
+      <Cell status={'miss'} onClick= {() => console.log('Clicked!')}/>
+    </div>
   );
 }
 

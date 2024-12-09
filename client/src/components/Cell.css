@@ -1,0 +1,24 @@
+/* Add the cell styles here */
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+  }
+  
+  .cell.empty {
+    background-color: #5c5d5d;
+  }
+  
+  .cell.miss {
+    background-color: #ffffff;
+    border: 1px solid #ff6f6f;
+  }
+  
+  .cell.hit {
+    background-color: #ff4c4c;
+    border: 1px solid #b30000;
+  }
+  
