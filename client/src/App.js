@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Cell status={'miss'} onClick= {() => console.log('Clicked!')}/>
+      <Cell status={'hit'} onClick= {() => console.log('Clicked!')}/>
     </div>
   );
 }

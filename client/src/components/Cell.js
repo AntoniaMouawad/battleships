@@ -8,17 +8,14 @@ const CELL_STATUS = {
   };
 
 const Cell = ({status, onClick}) => {
-    const cellType = status.isHit ? CELL_STATUS.HIT : status.isMiss? CELL_STATUS.MISS: CELL_STATUS.EMPTY
+    const cellType = status
     return (
         <div className={`cell ${cellType}`} onClick={onClick}>
         </div>
     )
 }
 Cell.propTypes = {
-    status: PropTypes.shape({
-      isHit: PropTypes.bool,
-      isMiss: PropTypes.bool,
-    }).isRequired,
+    status: PropTypes.oneOf(Object.values(CELL_STATUS)).isRequired,
     onClick: PropTypes.func.isRequired,
   };
 
